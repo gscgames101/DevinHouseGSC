@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document[M1S03] Ex 4 - Construir página HTML com estilização CSS (Form de Cadastro)</title>
+    <link rel="stylesheet" href="M1S03 EX 04 SS.css"/>
+</head>
+<body>
+    <div class="format-title centered"><b>Demographics Form</b></div>
+    <div class="block">
+        <table class="tablePos">
+            <tr>
+                <td class="title"><b>Name:</b></td>
+                <td><input type="text" id="Name" name="name"
+                    size="30" placeholder="Enter your name"></td>
+            </tr>
+            <tr>
+                <td class="title bdsize"><b>Birthdate:&nbsp;&nbsp;&nbsp;&nbsp;</b></td>
+                <td><input type="date" id="Birthdate" name="Birthdate" size="30"></td>
+            </tr>
+            <tr>
+                <td class="title"><b>CPF:</b></td>
+                <td><input type="number" id="CPF" name="CPF" maxlength="10"
+                    pattern="(\d{3}\.?\d{3}\.?\d{3}-?\d{2})|(\d{2}\.?\d{3}\.?\d{3}/?\d{4}-?\d{2})"
+                    size="30" placeholder="Enter your CPF number"></td>
+            </tr>
+            <tr>
+                <td class="title"><b>City:</b></td>
+                <td><select id="City" name="City">
+                    <option value="empty"></option>
+                    <option value="São Pedro do Ivaí">São Pedro do Ivaí</option>
+                    <option value="Itaquaquecetuba">Itaquaquecetuba</option>
+                    <option value="Tartarugalzinho do Norte">Tartarugalzinho do Norte</option>
+                    <option value="Pindamonhangaba">Pindamonhangaba</option>
+                    <option value="Avaré">Avaré</option>
+                    <option value="Maringá">Maringá</option>
+                </select></td>
+            </tr>
+        </table>
+    </div>
+    <div class="tag"><b>Please, fill in the fields</b> </div>
+</body>
+</html>
