@@ -27,6 +27,8 @@ header {
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: rgb(255, 208, 0);
   background-color: rgb(0, 0, 0);
+  padding: 20px;
+  width: 1880px;
 }
 
 footer {
@@ -35,6 +37,8 @@ footer {
   -webkit-text-stroke-color: rgb(255, 208, 0);
   background-color: rgb(0, 0, 0);
   font-size: 28px;
+  padding: 20px;
+  width: 1880px;
 }
 
 html,
@@ -53,14 +57,44 @@ main {
   flex-grow: 1;
 }
 
-nav > a {
+nav {
   color: rgb(0, 0, 0);
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgb(255, 208, 0);
   background-color: rgb(0, 0, 0);
   font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 30px;
 }
 
-header,
-footer {
+/* .board-container{
+  display: fle;
+} */
+
+.board-container > div {
+  display: flex;
+  font-size: 30px;
+  padding: 15px;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  text-align: border left;
 }
+
+.board-container img {
+  align-items: flex-start;
+  flex-direction: row;
+  width: 70%;
+  height: auto;
+}
+
+/* 
+#teste {
+  color: brown;
+  background-color: bisque;
+  font-size: 18px;
+  padding: 70px;
+  text-align: right;
+} */
